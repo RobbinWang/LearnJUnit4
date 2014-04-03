@@ -7,12 +7,10 @@ import org.junit.runners.JUnit4;
 import static junit.framework.Assert.assertEquals;
 
 /**
- * Created with IntelliJ IDEA.
  * User: robbin
  * Date: 4/3/14
  * Time: 5:45 PM
- * To change this template use File | Settings | File Templates.
- */
+**/
 @RunWith(JUnit4.class)
 public class Quickstart {
 
