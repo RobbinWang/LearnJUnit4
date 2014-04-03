@@ -13,7 +13,7 @@ import static junit.framework.Assert.assertEquals;
  * Time: 5:45 PM
 **/
 @RunWith(JUnit4.class)
-//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@FixMethodOrder(MethodSorters.DEFAULT)
 public class QuickstartTest {
 
     @BeforeClass
@@ -22,28 +22,31 @@ public class QuickstartTest {
         System.out.println("testBeforeClass......");
     }
 
-    @Test
-    public void testEquals1()
-    {
-        System.out.println("testEquals...1.....");
-        String a = "abc";
-        String b = "abc";
-        assertEquals("equal String", a, b);
-    }
+
     @Test
     public void testEquals5()
     {
-        System.out.println("testEquals..5......");
-        String a = "abc";
-        String b = "abc";
+        System.out.println("testEquals..c......");
+        String a = "bbb";
+        String b = "bbb";
         assertEquals("equal String", a, b);
     }
+
+    @Test
+    public void testEquals1()
+    {
+        System.out.println("testEquals...a.....");
+        String a = "aaa";
+        String b = "aaa";
+        assertEquals("equal String", a, b);
+    }
+
     @Test
     public void testEquals4()
     {
-        System.out.println("testEquals...4.....");
-        String a = "abc";
-        String b = "abc";
+        System.out.println("testEquals...b.....");
+        String a = "ccc";
+        String b = "ccc";
         assertEquals("equal String", a, b);
     }
 
