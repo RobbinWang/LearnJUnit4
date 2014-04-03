@@ -13,7 +13,7 @@ import static junit.framework.Assert.assertEquals;
  * Time: 5:45 PM
 **/
 @RunWith(JUnit4.class)
-@FixMethodOrder(MethodSorters.DEFAULT)
+@FixMethodOrder(MethodSorters.JVM)
 public class QuickstartTest {
 
     @BeforeClass
@@ -24,30 +24,39 @@ public class QuickstartTest {
 
 
     @Test
-    public void testEquals5()
+    public void testEqualsB()
     {
-        System.out.println("testEquals..c......");
+        System.out.println("testEquals...BB.....");
         String a = "bbb";
         String b = "bbb";
-        assertEquals("equal String", a, b);
+        assertEquals("equal String BBB", a, b);
     }
 
     @Test
-    public void testEquals1()
+    public void testEqualsA()
     {
-        System.out.println("testEquals...a.....");
+        System.out.println("testEquals...AA.....");
         String a = "aaa";
         String b = "aaa";
-        assertEquals("equal String", a, b);
+        assertEquals("equal String  AA", a, b);
     }
 
     @Test
-    public void testEquals4()
+    public void testEqualsD()
     {
-        System.out.println("testEquals...b.....");
+        System.out.println("testEquals...DD.....");
+        String a = "DDD";
+        String b = "DDD";
+        assertEquals("equal String DD", a, b);
+    }
+
+    @Test
+    public void testEqualsC()
+    {
+        System.out.println("testEquals...CC.....");
         String a = "ccc";
         String b = "ccc";
-        assertEquals("equal String", a, b);
+        assertEquals("equal String CC", a, b);
     }
 
 
